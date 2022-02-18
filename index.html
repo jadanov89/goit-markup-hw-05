@@ -15,7 +15,7 @@
             <nav class="nav">
             <a href="#" rel="noreferrer noopener" class=logo-link><span class="logo-span">Web</span>Studio</a>
             <ul class="munu">
-                <li class="munu-list"><a href="#" target="_blank" rel="noreferrer noopener" class="menu-link active">Студия</a></li>
+                <li class="munu-list munu-list-studio"><a href="#" target="_blank" rel="noreferrer noopener" class="menu-link active">Студия</a></li>
                 <li class="munu-list"><a href="./portfolio.html" target="_blank" rel="noreferrer noopener" class="menu-link">Портфолио</a></li>
                 <li class="munu-list"><a href="#" target="_blank" rel="noreferrer noopener" class="menu-link">Контакты</a></li>
             </ul>
@@ -46,7 +46,7 @@
     <section class="effective">
         <div class="container container-effective">
             <h1 class="effective-title">Эффективные решения<br /> для вашего бизнеса</h1>
-            <button type="button" class="effective-btn">Заказать услугу</button>
+            <button type="button" class="effective-btn" data-modal-open>Заказать услугу</button>
         </div>
     </section>
 
@@ -99,20 +99,28 @@
                 <ul class="we-doing-block">
             <li class="we-doing-list">
                 <a href="#" target="_blank" rel="noreferrer noopener" class="we-doing-link">
-                    <img src="./image/we_do_1.jpg" alt="Схемы алгоритмов работы" width="370">
+                    <div class="we-doing-etem">
+                        <img src="./image/we_do_1.jpg" alt="Схемы алгоритмов работы" width="370">
+                        <p class="we-doing-text">Десктопные приложения</p>
+                    </div>
                  </a>
                 </li>
 
                 <li class="we-doing-list">
                 <a href="#" target="_blank" rel="noreferrer noopener" class="we-doing-link">
-                    <img src="./image/we_do_2.jpg" alt="Схемы алгоритмов работы" width="370">
-                        
+                    <div class="we-doing-etem">
+                        <img src="./image/we_do_2.jpg" alt="Схемы алгоритмов работы" width="370">
+                        <p class="we-doing-text">Мобильные приложения</p>
+                    </div>  
                 </a>
             </li>
 
                 <li class="we-doing-list">
                 <a href="#" target="_blank" rel="noreferrer noopener" class="we-doing-link">
-                    <img src="./image/we_do_3.jpg" alt="Схемы алгоритмов работы" width="370">
+                    <div class="we-doing-etem">
+                        <img src="./image/we_do_3.jpg" alt="Схемы алгоритмов работы" width="370">
+                        <p class="we-doing-text">Дизайнерские решения</p>
+                    </div>
                 </a>
                 </li>
                 </ul>
@@ -397,5 +405,16 @@
         </div>
     </footer>
 
+<div class="backdrop is-hidden" data-modal>
+    <div class="model">
+        <button type="button" data-modal-close>
+             <svg class="footer-icon" width="20" height="20">
+                                <use href="./image/symbol-defs.svg#icon_close"></use>
+                            </svg> 
+        </button>
+    </div>
+</div>
+
+ <script src="./js/modal.js"></script>
 </body>
 </html>

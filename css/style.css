@@ -92,6 +92,7 @@ a {
 
 .munu {
     display: flex;
+    position: relative;
     align-items: center;
     margin-left: 93px;
 }
@@ -108,6 +109,36 @@ a {
 .munu-list:last-child {
     margin-right: 0px;
 }
+
+.munu-list-studio::after {
+    content: '';
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -25px;
+    width: 48px;
+    height: 4px;
+    background: var(--brand-color);
+    border-radius: 2px;
+}
+
+
+.munu-list-portfolio::after {
+    content: '';
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -25px;
+    width: 78px;
+    height: 4px;
+    background: var(--brand-color);
+    border-radius: 2px;
+}
+
+
+
+
+
 .content-list {
     display: flex;
     align-items: center;
@@ -290,9 +321,31 @@ a {
 .our-team-block {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-between; 
+}
+
+.we-doing-etem {
+    position: relative;
+}
+
+.we-doing-text {
+    position: absolute;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.14;
+    font-family: Roboto;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    color: var(--fourth-color);
+    background-color: var(--black-color);
+    text-transform: uppercase;
+    left: 0;
+    bottom: 0;
     
 }
+
 
 
 .our-team-social-networks {
@@ -596,7 +649,29 @@ a {
 }
 
 
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
 
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.model {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 528px;
+    min-height: 581px;
+    background-color: var(--fourth-color);
+    transform: translate(-50%, -50%);
+}
 
 /*-------------------------------------------------*/
 
