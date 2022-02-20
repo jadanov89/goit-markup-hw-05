@@ -340,7 +340,7 @@ a {
     padding-top: 27px;
     padding-bottom: 27px;
     color: var(--fourth-color);
-    background-color: var(--black-color);
+    background-color: rgba(47, 48, 58, 0.8);
     text-transform: uppercase;
     left: 0;
     bottom: 0;
